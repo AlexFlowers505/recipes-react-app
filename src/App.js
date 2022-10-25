@@ -11,7 +11,7 @@ export default function App() {
         <BrowserRouter>
         <Nav>
           <GiKnifeFork/>
-          <Logo to={'/'}>delicious</Logo>
+          <Logo to={'/'}>deliciousss</Logo>
         </Nav>
           <Search/>
           <Category/>
