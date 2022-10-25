@@ -18,7 +18,6 @@ export default function Search() {
                 <FaSearch/>
                 <input onChange={evt => setInput(evt.target.value)} type='text' />
             </div>
-            <h1>{input}</h1>
         </FormStyle>
     )
 }

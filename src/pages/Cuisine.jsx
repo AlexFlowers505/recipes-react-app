@@ -18,13 +18,15 @@ export default function Cuisine() {
     return (
         <Grid>
             {cuisine.map( elm => {
-            return (
-                <Card key={elm.id}>
-                    <img src={elm.image} alt={elm.title} />
-                    <h4>{elm.title}</h4>
-                </Card>
+                return (
+                    <Card key={elm.id}>
+                        <Link to={`/recipe/${elm.id}`}>
+                            <img src={elm.image} alt={elm.title} />
+                            <h4>{elm.title}</h4>
+                        </Link>
+                    </Card>
             )
-            })}  
+        })}  
         </Grid>
     )
 }
